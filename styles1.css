@@ -1,0 +1,699 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+@font-face {
+    font-family: "parisienne";
+    src: url(/assets/fonts/Parisienne-Regular.ttf);
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* INTRODUCTION */
+a {color: black; font-family: arial; text-decoration: none;}
+a:hover {color: black; font-family: arial; text-decoration: underline yellow;}
+nav{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(100, 89, 89);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.logo{
+   width: 75%;
+   height: 75%;
+}
+.nav-logo{
+    width: 25%;
+    display:  flex;
+    align-items: center;
+}
+.nav-menu{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.first-menu {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-style: italic;
+    color: white;
+}
+header {
+    height: 100vh;
+    width: 100vw;  
+    background-image: url(/MOZZABAR/ASSETS/BACKGROUND1.webp);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+.descubre, .mozzabar, .we-are-open, .barra{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+.descubre{
+    color: orange;
+    font-size: 30px;
+    font-family: parisienne;
+}
+.mozzabar{
+    color: white;
+    font-size: 50px;
+}
+.we-are-open{
+    color: white;
+    font-size: 15px;
+}
+.gold{
+    width: 300px;
+    height: 30px;
+}
+/*CONCEPT*/
+.concept-page{
+    background-image: url(/MOZZABAR/ASSETS/BACKGROUND2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.concepto {
+    width: 60%;
+    height: 40%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 0px 60px 0px 60px;
+}
+.lettuge, .coctel {
+    width: 170px;
+    height: 160px;
+    margin-bottom: 40px;
+    position: absolute;
+}
+.concept-title, .concept-title::after, .concept-title::before {
+    text-align: center;
+    content: "_____";
+    margin-bottom: 8px;
+}
+.lettuge {
+    margin: -53px 0px 0px -342px;
+}
+.coctel {
+    margin: -340px 0px 0px 192px;
+}
+/*GALLERY - 3PAGE*/ 
+.page-3 {
+    background-image: url(/MOZZABAR/ASSETS/BACKGROUND3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.first-column, .third-column, .second-column {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: 30%;
+    margin-top: 5%;
+}
+/*CARTA*/
+.fourth-page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.carta-title, .carta-title::after, .carta-title::before {
+    text-align: center;
+    content: "---------------------";
+    margin-bottom: 8px;
+    margin-top: 15px;
+    color: orange;
+}
+.fourth-nav{
+    width: 100%;
+    height: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 11PX;
+}
+.desayunos, .carta, .cocktails {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.fourth-menu{
+    background-image: url(/MOZZABAR/ASSETS/BACKGROUND4.jpg);
+    background-size: cover;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.salados {
+    background-color: white;
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.dulces{
+    background-color: white;
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: 130px;
+}
+.fourth-button{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 5px 5px 50px 5px;
+}
+
+/*RESERVAS*/
+.reservas-page{
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/Como-organizar-las-reservas-en-un-restaurante.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+}
+.bookings-title {
+    text-align: center;
+    content: "---------------------";
+    margin-bottom: 8px;
+    margin-top: 35px;
+    color: white;
+}
+.bookings-title::after, .bookings-title::before {
+    text-align: center;
+    content: "---------------------";
+    margin-bottom: 8px;
+    margin-top: 35px;
+    color: orange
+}
+.booking-group{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.bookings-direction {
+    width: 35%;
+    color: white;
+    margin-left: 60px;
+}
+.bookings-form{
+    width: 45%;
+    color: white;
+}
+.table-form, .hour-form, .persons-form{
+    display: flex;
+    flex-direction: column;
+}
+.table-hour{
+    display: flex;
+    flex-direction: column;
+}
+fieldset{
+    border: none;
+}
+button, input, select{
+    width: 100%;
+}
+.bookings-mozza {
+    color: orange;
+}
+.bookings-food{ 
+    color: white;
+}
+/*blog*/
+.blog-items{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.blog-page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-title, .blog-title::after, .blog-title::before {
+    text-align: center;
+    content: "---------------------";
+    margin-bottom: 25px;
+    margin-top: 200px;
+    color: orange;
+    position: relative;
+}
+.blog-page-1, .blog-page-2, .blog-page-3 {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: 30%;
+    margin-top: 5%;
+    color:antiquewhite;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+}
+.blog-page-1{
+    background-image: url(/MOZZABAR/ASSETS/BACKGROUND61.jpg);
+    background-size: cover;
+    width: 20%;
+    height: 35%;
+}
+.blog-page-2{
+    background-image: url(/MOZZABAR/ASSETS/BACKGROUND62.jpg);
+    background-size: cover;
+    width: 20%;
+    height: 35%;
+}
+.blog-page-3{
+    background-image: url(/MOZZABAR/ASSETS/BACKGROUND63.jpg);
+    background-size: cover;
+    width: 20%;
+    height: 35%;
+}
+.mozza-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 100px;
+    color: whitesmoke;
+    border-color: aqua;
+    border-width: 1px;
+    border: black solid 1px;
+    font-size: smaller;
+}
+.notation {
+    font-size: x-small;
+    justify-content: left;
+
+}
+.blog-buttom{
+    border: 1px solid rgb(239, 150, 16);
+    color: white;
+    background-color:rgb(239, 150, 16);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    margin-top: 15px;
+    width:fit-content;
+}
+.entries{
+    border: 1px solid rgb(239, 150, 16);
+    color: white;
+    background-color:rgb(239, 150, 16);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: fit-content;
+    justify-items: center;
+
+
+}
+/* SIGUENOS */
+.seventh-page {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.seventh-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/assets/cake\ seventh.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center 
+}
+.seventh-logo{
+    width: 80%;
+    height: 80%;
+}
+.seventh-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.phone, .ubication, .mail{
+    width: 55px;
+    height: 50px;
+    margin-left: 25px;
+}
+.social-webs{
+    width: 60%;
+    object-fit: contain;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.instagram, .facebook{
+    border: 1px solid black;
+    color: black;
+    background-color:white;
+    text-align: center;
+    font-size: 12px bold;
+    margin: 2px 1px;
+    cursor: pointer;
+    margin: 0px 80px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.siguenos {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: black;
+}
+.siguenos::after, .siguenos::before {
+    text-align: center;
+    content: "---------------------";
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: orange
+}
+/* Resto de reglas en orden creciente */
+@media (min-width: 360px) {
+    .nav-logo {
+        margin-left: 1%;
+    }
+    .logo ´{
+        height: 60vh;
+    }
+    .descubre, .mozzabar, .barra, .we-are-open {
+        margin-left: -7%;
+    }
+    .mozzabar {
+        font-size: 45px;
+    }
+    .coctel .lettuge {
+        display: none;
+    }
+    .first-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -14%;
+    }
+    .header {
+        width: 100vw;
+    }
+    .concepto {
+        height: 62vh;
+        width: 80vw;
+        margin: 25% 15% 0% 5%;
+    }
+    .page-3 {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 20%;
+    }
+    .fourth-page {
+        height: 120vh;
+    }
+    .first-column, .second-column, .third-column {
+        width: 70%;
+    }
+    .fourth-menu {
+        width: 95%;
+        margin-right: 12%;
+    }
+    .fourth-button {
+        margin-left: -30%;
+    }
+    .bookings-title {
+        margin-right: 7%;
+    }
+    .reservas-page {
+        margin-top: 630px;
+        height: 53vh;
+    }   
+    .blog-page {
+        margin-top: -20%;
+        height: 73vh;
+    }
+    .blog-items {
+        height: 80vh;
+        margin-bottom: -30%;
+    }
+    .blog-buttom {
+        margin-left: 15%;
+    }
+    .blog-page-title {
+        margin-left: -18%;
+    }
+    .blog-page-1, .blog-page-2, .blog-page-3 {
+        width: 28vw;
+        align-items: center;
+        margin-left: -12%;
+    }
+    .mozza-bar {
+        margin-bottom: -20%;
+    }
+    .seventh-icon {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media (min-width: 576px) {
+    .first-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -70%;
+        flex-wrap: wrap;
+        width: 30%;
+        margin: 2% 3% 2% 3%;
+    }
+    .nav-logo {
+        margin-left: -1%;
+    }
+    .descubre, .mozzabar, .barra, .we-are-open {
+        margin-left:  0%;
+        margin-right: 0%;
+    }
+    .coctel .lettuge {
+        display: flex;
+    }
+    .lettuge {
+        display: flex;;
+    }
+    .concepto {
+        margin-left: 17%;
+        width: 60vw; 
+    }
+    .coctel {
+        margin: -180px 0px 0px 50px;
+    }
+    .lettuge {
+        margin: 555px 5px 6px -150px;
+    }
+    .page-3 {
+        margin-left: 0%;
+    }
+    .fourth-title, .fourth-nav {
+        margin-left: 1%;
+    }
+    .fourth-menu {
+        width: 95vw;
+        margin-left: 15%;
+    }
+    .reservas-page {
+        margin-top: 100%;
+        height: 70vh;
+    }
+    .booking-group {
+        flex-direction: column;
+    }
+    .bookings-title, .booking-group {
+        margin-left: 10%;
+    }
+    .bookings-direction {
+        margin-right: 10%;
+    }
+    .blog-page {
+        margin-left: 8%;
+        flex-wrap: nowrap;
+    }
+    .blog-items {
+        width: 100vw;
+    }
+    .mozza-bar {
+        margin-bottom: 1px;
+    }
+    .blog-buttom {
+        margin-left: 30%;
+    }
+    .seventh-logo {
+        margin-left: 20%;
+    }
+    .seventh-icon {
+        flex-direction: row;
+    }
+    .icon-one {
+        margin-left: 1%;
+    }
+    .siguenos, .social-webs {
+        margin-left: 10%;
+    }
+}
+@media (min-width: 768px) {
+    .nav-logo {
+        margin-left: -1%;
+    }
+    .first-menu {
+
+        margin-right: 10%;
+    }
+    .concepto {
+        height: 60vh;
+    }
+    .lettuge {
+        margin: 555px 5px 6px -90px;
+    }
+    .coctel {
+        margin: -210px 0px 0px 1px;
+    }
+    .first-column, .second-column, .third-column {
+        width: 60%;
+        }
+    }
+    .fourth-button {
+        margin-left: -17%;
+    }
+    .reservas-page {
+        margin-top: 1%;
+    }
+    .booking-group {
+        margin-right: 10%;
+    }
+    .blog-buttom {
+        margin-left: 35%;
+    }
+    .seventh-logo {
+        margin-right: 20%;
+    }
+
+@media (min-width: 992px) {
+    .nav-logo {
+        margin-left: -5%;
+    }
+    .first-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -30%;
+        flex-wrap: nowrap;
+        width: 30%;
+        justify-content: space-between;
+    }
+    .mozzabar {
+        font-size: 50px;
+    }
+    .concepto {
+        height: 60vh;
+        width: 50vw;
+    }
+    .lettuge {
+        margin: 570px 5px 6px -110px;
+    }
+    .coctel {
+        margin: -230px 0px 0px -20px;
+    }
+    .page-3 {
+        flex-direction: row;
+    }
+    .first-column, .second-column, .third-column {
+        width: 25%;
+        }
+    .booking-group {
+        margin-left: 50%;
+    }
+
+  
+}
+@media (min-width: 1200px) {
+    .nav-logo {
+        margin-left: -5%;
+    }
+    .first-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -70%;
+        width: 30%;
+        flex-wrap: nowrap;
+    }
+
+    .concepto {
+        height: 50vh;
+        width: 30vw;
+    }
+    .lettuge {
+        margin: 250px 5px 6px -240px;
+    }
+    .coctel {
+        margin: -520px 0px 0px 90px;
+    }
+
+    .booking-group {
+        margin-right: 0%;
+        margin-left: 30%;
+        flex-direction: row;
+        width: 100vw;
+        height: 30%;
+        margin-bottom: -60%;
+    }
+    .blog-buttom {
+        margin-left: 40%;
+    }
+}
